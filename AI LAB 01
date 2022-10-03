@@ -1,0 +1,405 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOot+7Izc7t1hd7/l7yGDum",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ayesha3910/Artificial-Intelligence/blob/main/AI%20LAB%2001\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7g1TXH4L9UkS",
+        "outputId": "f2ed3bcb-b238-4156-e472-738486bd5384"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 34\n",
+            "Number is even\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Activity 1\n",
+        "# Check whether the number is Even or Odd\n",
+        "number = int(input(\"Enter a number: \"))\n",
+        "if (number % 2 == 0):\n",
+        "  print(\"Number is even\")\n",
+        "else:\n",
+        "  print(\"Number is Odd\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Activity 2\n",
+        "# Check whether the number is prime or not\n",
+        "number = int(input('Enter a number : '))\n",
+        "counter = 0\n",
+        "for i in range (1, number + 1):\n",
+        "    if(number % i == 0):\n",
+        "        counter += 1;\n",
+        "if(counter == 2):\n",
+        "    print(f\"{number} is a Prime number\")\n",
+        "else:\n",
+        "    print(f\"{number} is NOT a Prime number\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JyrXaaBH9ifS",
+        "outputId": "c0a1c323-c696-47b0-d924-be880e24cb13"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number : 25\n",
+            "25 is NOT a Prime number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Activity 3\n",
+        "# Write a Python code to keep accepting integer values from user until 0 is entered.\n",
+        "# Display sum of the given values.\n",
+        "\n",
+        "number = int(input(\"Enter a number: \"))\n",
+        "sumOfNumbers = 0\n",
+        "while number!=0:\n",
+        "  sumOfNumbers += number\n",
+        "  number = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "print(f\"Sum of numbers is: {sumOfNumbers}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pfiOFl0j9rwo",
+        "outputId": "62781a7f-c7c5-47af-81df-1c42bd9b3c2f"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 15\n",
+            "Enter a number: 34\n",
+            "Enter a number: 87\n",
+            "Enter a number: 80\n",
+            "Enter a number: 0\n",
+            "Sum of numbers is: 216\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Activity 4\n",
+        "# Accept 5 integer values from user and display their sum.\n",
+        "sumofNumbers = 0\n",
+        "counter = 0\n",
+        "while counter!=5:\n",
+        "  number = int(input(\"Enter number: \"))\n",
+        "  sumofNumbers+=number\n",
+        "  counter+=1\n",
+        "print(f\"Sum of Numbers is: {sumofNumbers}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oxApXHOG9044",
+        "outputId": "5fb77ef4-ec70-4390-9305-632298284f0e"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number: 6\n",
+            "Enter number: 10\n",
+            "Enter number: 9\n",
+            "Enter number: 10\n",
+            "Enter number: 8\n",
+            "Sum of Numbers is: 43\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Activity 5\n",
+        "# Calculate the sum of all the values between 0-10 using while loop.\n",
+        "\n",
+        "sumOfNumbers = 0\n",
+        "counter = 1\n",
+        "while counter <= 10:\n",
+        "  sumOfNumbers += counter\n",
+        "  counter += 1\n",
+        "print(f\"Sum of 0-10 is: {sumOfNumbers}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tcrd5aLE-EjD",
+        "outputId": "a6eab059-c622-420f-8e44-68c3ba79e985"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sum of 0-10 is: 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Lab Task 1\n",
+        "# Write a program that prompts the user to input an integer and \n",
+        "# then outputs the number with the digits reversed. \n",
+        "# For example, if the input is 12345, the output should be 54321.\n",
+        "Number = int(input(\"Please Enter any Number: \"))    \n",
+        "Reverse = 0    \n",
+        "while(Number > 0):    \n",
+        "    Reminder = Number %10    \n",
+        "    Reverse = (Reverse *10) + Reminder    \n",
+        "    Number = Number //10    \n",
+        "     \n",
+        "print(\"\\n Reverse of entered number is = %d\" %Reverse)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q55_T5jJ-P91",
+        "outputId": "bbcdd377-4d33-4e10-8795-1d8ab191c3b5"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please Enter any Number: 34567\n",
+            "\n",
+            " Reverse of entered number is = 76543\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Lab Task 2\n",
+        "# Write a program that reads a set of integers, and then \n",
+        "# prints the sum of the even and odd integers.\n",
+        "sumOfEvenNumbers = 0\n",
+        "sumOfOddNumbers = 0\n",
+        "\n",
+        "counter = 0\n",
+        "while counter < 10:\n",
+        "  number = int(input('Enter a number : '))\n",
+        "  if number % 2 == 0:\n",
+        "    sumOfEvenNumbers += number\n",
+        "  else:\n",
+        "    sumOfOddNumbers += number\n",
+        "  counter += 1\n",
+        "print(f\"Sum of Even Numbers is: {sumOfEvenNumbers}\")\n",
+        "print(f\"Sum of Odd Numbers is: {sumOfOddNumbers}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v1r5nFOc-kd9",
+        "outputId": "402bc6c6-b929-4848-9329-ce71528e0999"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number : 20\n",
+            "Enter a number : 20\n",
+            "Enter a number : 30\n",
+            "Enter a number : 40\n",
+            "Enter a number : 10\n",
+            "Enter a number : 20\n",
+            "Enter a number : 890\n",
+            "Enter a number : 10\n",
+            "Enter a number : 9\n",
+            "Enter a number : 20\n",
+            "Sum of Even Numbers is: 1060\n",
+            "Sum of Odd Numbers is: 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Lab Task 3\n",
+        "# Fabonacci Series\n",
+        "nterms = int(input(\"How many terms? \"))\n",
+        "\n",
+        "# first two terms\n",
+        "n1, n2 = 0, 1\n",
+        "count = 0\n",
+        "\n",
+        "# check if the number of terms is valid\n",
+        "if nterms <= 0:\n",
+        "   print(\"Please enter a positive integer\")\n",
+        "# if there is only one term, return n1\n",
+        "elif nterms == 1:\n",
+        "   print(\"Fibonacci sequence upto\",nterms,\":\")\n",
+        "   print(n1)\n",
+        "# generate fibonacci sequence\n",
+        "else:\n",
+        "   print(\"Fibonacci sequence:\")\n",
+        "   while count < nterms:\n",
+        "       print(n1)\n",
+        "       nth = n1 + n2\n",
+        "       # update values\n",
+        "       n1 = n2\n",
+        "       n2 = nth\n",
+        "       count += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-kZf0l3K-4uF",
+        "outputId": "10c6f774-370e-4dcb-bffa-fea88b75c2bc"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "How many terms? 2\n",
+            "Fibonacci sequence:\n",
+            "0\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# lab task 4\n",
+        "# Grading System\n",
+        "a=int(input(\"enter marks of students\"))\n",
+        "avg=a/100\n",
+        "if(avg<50):\n",
+        "  print(\"your grade is F\")\n",
+        "elif (avg>=50 and avg<=60):\n",
+        "  print(\"your grade is E\")\n",
+        "elif(avg>=61 and avg<=70):\n",
+        "  print(\"Your grade is D\")\n",
+        "elif(avg>=71 and avg<=80):\n",
+        "  print (\"your grade is C\")\n",
+        "elif(avg>=81 and avg<=90):\n",
+        "  print(\"your grade is B\")\n",
+        "else:\n",
+        "  print(\"your grade is A\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qoUj1lra_JJB",
+        "outputId": "6f4a95ba-d090-4c09-a8f8-437295d849c3"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter marks of students60\n",
+            "your grade is F\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Lab task 5\n",
+        "# Factorial of a number\n",
+        "\n",
+        "number = int(input(\"Enter a number: \"))\n",
+        "factorial = 1\n",
+        "\n",
+        "for i in range(1, number+1):\n",
+        "  factorial *= i\n",
+        "print(f'Factorial of {number} is {factorial}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ygxflr1K_QEV",
+        "outputId": "579660d5-53e8-4a1e-f755-affe691e7b49"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 7\n",
+            "Factorial of 7 is 5040\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
